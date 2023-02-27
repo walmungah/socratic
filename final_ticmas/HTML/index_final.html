@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
     <title>Lorenzo Rodriguez</title>
 </head>
 
@@ -93,24 +94,33 @@
         <Div class="divisor2"></Div>
 
     <footer>
-        <script src="script.js"></script>
+        
 
-        <button id="contacto"> Contactar</button>
+        <div class="btn"><button id="contacto"> Contactar</button></div>
    
-            <div >
-                <form id="formulario">
-                <label>Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+           
+            <form id="formulario">
+
+                <label for="nombre">Nombre: </label><div></div>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+               
+                <div></div>
           
-                <label>Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label><div></div>
+                <input type="email" id="email" name="email" placeholder="ingrese su Email" required>
+                
+                <div></div>
+                
           
-                <label>Mensaje</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
+                <label for="mensaje">Mensaje</label><div></div>
+                <textarea id="msj" name="mensaje" placeholder="Ingrese su mensaje" required ></textarea>   
+                
+                <div><h5>A la brevedad me comunicare con usted</h5></div>
           
-                <button>Enviar</button>
+                <input type="button" value="enviar">
+                
                 </form>
-            </div>
+            
 
     </footer>
     

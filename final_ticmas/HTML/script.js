@@ -3,9 +3,9 @@ const contacto = document.getElementById('contacto');
 contacto.addEventListener('click', () => {
   const formulario = document.getElementById('formulario');
 
-  if (form.style.visibility === 'hidden') {
-    form.style.visibility = 'visible';
+  if (formulario.style.visibility === 'hidden') {
+    formulario.style.visibility = 'visible';
   } else {
-    form.style.visibility = 'hidden';
+    formulario.style.visibility = 'hidden';
   }
 });

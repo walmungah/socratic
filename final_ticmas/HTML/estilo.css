@@ -18,7 +18,8 @@ body {
   font-size: x-large;
   text-shadow: #2B273C;
   padding: 2px;
-  box-shadow: 2px 2px 7px 1px #2B273C; 
+  box-shadow: 2px 2px 7px 1px #2B273C;
+  
 
 }
 .perfil{
@@ -28,7 +29,7 @@ body {
 #CV_Photo{
 max-height: 180px;
 max-width: auto;
-margin: 5px;
+margin: 55px;
 }
 
 .divisor{
@@ -44,9 +45,10 @@ width: auto;
 .divisor2{
   width: auto; 
   height: 9px;
-    background-image: linear-gradient(90deg,#FF6319, #f72d8A,#bc2df9);
-    margin: 7px 20px 30px 20px;
+  background-image: linear-gradient(90deg,#FF6319, #f72d8A,#bc2df9);
+  margin: 7px 20px 30px 20px;
   border-radius: 3px;
+  box-shadow: #7c1c0b;
 }
 .titulo{
   width: auto;
@@ -57,14 +59,14 @@ width: auto;
   border-radius: 15px;
   
   }
-  .h2{
+.h2{
     text-align: left;
     margin-left: 10px;
     padding-left: 10px;
     background-image:linear-gradient(70deg,#5e5585,#8f84bb) ;
     text-shadow: #fff;
     }
-  .h2data{
+.h2data{
     text-align: left;
     font-style: italic;
     margin-left: 10px;
@@ -74,14 +76,14 @@ width: auto;
     padding: 3px 1px 1px 3px;
 
   }
-  .databox{
+.databox{
     background-image:linear-gradient(70deg,#aca1da,#8f84bb);
     border-radius: 12px;
     margin-left: 58px;
     padding: 10px;
 
   }
-  .databox2{
+.databox2{
     background-image:linear-gradient(70deg,#aca1da,#8f84bb);
     border-radius: 12px;
     margin-left: 15px;
@@ -91,3 +93,59 @@ width: auto;
    
 
   }
+#contacto{width: 200px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+
+  }
+.btn{
+  box-align: center;
+}
+input[type=text]{
+      width:300px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+input[type=email]{
+    width:300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+  width: 100px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+#msj{
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;}
+
+#formulario{
+  visibility: hidden;
+}
