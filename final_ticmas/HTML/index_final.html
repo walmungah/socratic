@@ -13,48 +13,106 @@
 
 <body>
 
-    <Header><H1>Lorenzo Rodriguez</H1></Header>
+    <Header class="header"><H1>Lorenzo Rodriguez</H1></Header>
     <div class="divisor"></div>
-    <H2>Técnico es Diseño y Desarrollo de Videojuegos</H2>
+    <div class="titulo"><H2 class="h2">Técnico es Diseño y Desarrollo de Videojuegos</H2></div>
     <div class="divisor"></div>
-    <H2>Datos personales</H2>
-        <ul>
-            <li>Fecha de nacimiento: 16-10-1988</li>
-            <li>Nacionalidad: Argentino</li>
-            <li>Residencia: Villa mercedes, Pcia de San Luis</li>
-
-        </ul>
-    
+    <div class="perfil"><img src="https://www.lensrentals.com/blog/media/2016/02/Cinematic-Headshots-1-650x520.jpg"  alt="CV_Photo" id="CV_Photo"></div>
     <div class="divisor2"></div>
+    <!--INFORMACION PERSONAL Y ACADEMICA-->
+    <div><H2 class="h2data">Datos personales</H2></div>
+        <div class="databox">
+            <ul>
+                <li>Fecha de nacimiento: 16-10-1988</li>
+                <li>Nacionalidad: Argentino</li>
+                <li>Residencia: Villa mercedes, Pcia de San Luis</li>
+            </ul>
+        </div>
     
-    <h2>Formacion Academica</h2>
-        <ul>
-            <Li>Escuela Secundaria Leonardo Da Vinci. Secundaria. 2016</Li>
-            <Li>Universidad De La Punta. Tecnicatura en Diseño y Desarrollo de Videojuegos. 2018 </Li>
-            <Li>Ticmas. Introduccion al Desarrollo Front End. 2022</Li>
-        </ul>
+    
+    <h2 class="h2data">Formacion Academica</h2>
+        <div class="databox">
+            <ul>
+                <Li>Escuela Secundaria Leonardo Da Vinci. Secundaria. 2016</Li>
+                <Li>Universidad De La Punta. Tecnicatura en Diseño y Desarrollo de Videojuegos. 2018 </Li>
+                <Li>Ticmas. Introduccion al Desarrollo Front End. 2022</Li>
+            </ul>
+        </div>
 
-    <Div class="divisor2"></Div>
+    
+    <h2 class="h2data">Manejo de Idiomas</h2>
+        <div class="databox">
+            <ol>
+            <li>Ingles- Avanzado</li>
+            <Li>Italiano- Intermedio</Li>
+            <Li>Noruego- Básico</Li>
+            <Li>Aleman- Básico</Li>
+            </ol>
+        </div>    
 
-    <H2>Experiencia Laboral</H2>
+        <div class="divisor2"></div>
+<!--DIVISION DE EXPERIENCIA LABORAL-->
+    <div class="titulo"><H2 class="h2">Experiencia Laboral</H2></div>
         <Ol>
-            <H3>2D Game Artist</H3>
-            <h4>ArgenGames.2020-Actualidad</h4>
-            <Ul>
-                <Li>Diseño de Arte Conceptual</Li>
-                <Li>Diseño y Desarrollo de Escenarios</Li>
-                <Li>Diseño y Desarrollo de Personajes</Li>
-            </Ul>
-            <H3>Game Designer Junior</H3>
-            <H4>Plavicon Gaming Experience. 2018-2020</H4>
-                <ul>
-                    <Li>Diseño Creativo</Li>
-                    <Li>Diseño de Niveles (Unity Engine)</Li>
-                </ul>
+            <li>
+                <H3 class="h2data">2D Game Artist</H3>
+                    <div class="databox2">
+                        <h4>ArgenGames.2020-Actualidad</h4>          
+                        <Ul>
+                            <Li>Diseño de Arte Conceptual</Li>
+                            <Li>Diseño y Desarrollo de Escenarios</Li>
+                            <Li>Diseño y Desarrollo de Personajes</Li>
+                        </Ul>
+                    </div>                    
+            </li>
+            
+            </div>
+            <li>
+                <H3 class="h2data">Game Designer Junior</H3>
+                <div class="databox2">
+                    <H4>Plavicon Gaming Experience. 2018-2020</H4>
+                    <ul>
+                        <Li>Diseño Creativo</Li>
+                        <Li>Diseño de Niveles (Unity Engine)</Li>
+                    </ul>
+                </div>    
+            </li>
+            <li>
+                <H3 class="h2data">Diseñador juegos para moviles</H3>
+                <div class="databox2">                    
+                    <h4>Deliver Games 2017-2018</h4>
+                    <Ul>
+                        <Li>Concept Designer</Li>
+                        <Li>Desarrollador Unity3D</Li>
+                        <Li>Desarrollador C#</Li>
+                    </Ul>
+                </div>
+            </li>
         </Ol>
         
-    
+        <Div class="divisor2"></Div>
 
+    <footer>
+        <script src="script.js"></script>
+
+        <button id="contacto"> Contactar</button>
+   
+            <div >
+                <form id="formulario">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+          
+                <label>Email:</label>
+                <input type="email" id="email" name="email" required>
+          
+                <label>Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+          
+                <button>Enviar</button>
+                </form>
+            </div>
+
+    </footer>
     
 </body>
 </html>
