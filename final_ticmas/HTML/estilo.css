@@ -6,5 +6,88 @@
 }*/
 
 body {
-    background-color: rgb(192, 135, 230);
+    background-color: #8f84bb;
+    font-family: 'Arvo', serif;
+    
 }
+
+.header{
+  background-color: #5e5585;
+  border-radius: 9px;
+  text-align: center;
+  font-size: x-large;
+  text-shadow: #2B273C;
+  padding: 2px;
+  box-shadow: 2px 2px 7px 1px #2B273C; 
+
+}
+.perfil{
+  margin: 7px 15px 7px 7px; 
+}
+
+#CV_Photo{
+max-height: 180px;
+max-width: auto;
+margin: 5px;
+}
+
+.divisor{
+width: auto; 
+  height: 9px;
+  background-image: linear-gradient(70deg,#FF6319, #f72d8A,#bc2df9);
+  box-shadow: #7c1c0b;
+  margin: 10px 20px 10px 20px;
+  border-radius: 3px;
+  
+
+}
+.divisor2{
+  width: auto; 
+  height: 9px;
+    background-image: linear-gradient(90deg,#FF6319, #f72d8A,#bc2df9);
+    margin: 7px 20px 30px 20px;
+  border-radius: 3px;
+}
+.titulo{
+  width: auto;
+  height: fit-content;
+  padding: 2px 5px 2px ;
+  background-image:linear-gradient(70deg,#5e5585,#8f84bb) ;
+  font-size: larger;
+  border-radius: 15px;
+  
+  }
+  .h2{
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 10px;
+    background-image:linear-gradient(70deg,#5e5585,#8f84bb) ;
+    text-shadow: #fff;
+    }
+  .h2data{
+    text-align: left;
+    font-style: italic;
+    margin-left: 10px;
+    padding-left: 10px;
+    background-image:linear-gradient(70deg,#5e5585,#8f84bb) ;
+    border-radius: 3px;
+    padding: 3px 1px 1px 3px;
+
+  }
+  .databox{
+    background-image:linear-gradient(70deg,#aca1da,#8f84bb);
+    border-radius: 12px;
+    margin-left: 58px;
+    padding: 10px;
+
+  }
+  .databox2{
+    background-image:linear-gradient(70deg,#aca1da,#8f84bb);
+    border-radius: 12px;
+    margin-left: 15px;
+    padding-left:10px;
+    padding-top: 3px;
+    padding-bottom: 20px;
+   
+
+  }

@@ -1,7 +1,7 @@
-const btn = document.getElementById('btn');
+const contacto = document.getElementById('contacto');
 
-btn.addEventListener('click', () => {
-  const form = document.getElementById('formulario');
+contacto.addEventListener('click', () => {
+  const formulario = document.getElementById('formulario');
 
   if (form.style.visibility === 'hidden') {
     form.style.visibility = 'visible';
