@@ -1,10 +1,3 @@
-/**@media only screen and (max-width: 768px) {
-    
-    [class*="col-"] {
-      width: 100%;
-    }
-}*/
-
 body {
     background-color: #8f84bb;
     font-family: 'Arvo', serif;
@@ -16,24 +9,77 @@ body {
   border-radius: 9px;
   text-align: center;
   font-size: x-large;
-  text-shadow: #2B273C;
   padding: 2px;
   box-shadow: 2px 2px 7px 1px #2B273C;
+  display: flex;
+  justify-content: center;
+  flex-basis:0;
+
+}
+
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.flexsecciones{
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  flex-basis: 0px;
+
+}
+.flexsecciones1{
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+@media  (min-width: 1000px) {
+  .flex{
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+   
+  }
+ 
+ .flexsecciones{
+    flex-direction: column;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+  }
+ 
+}
+@media (min-width:1000px){
+  .flexsecciones{
+    flex-direction: row;
+  }
+  .flexsecciones1{
+    flex-direction: row;
+  }
+  
+}
+@media (max-width: 1000px) {
+  .divisor2{display: none;}
+  .divisor_vertical{display:none}
+  
+}
   
 
-}
-.perfil{
-  margin: 7px 15px 7px 7px; 
-}
-
 #CV_Photo{
+display:flex;
 max-height: 180px;
 max-width: auto;
 margin: 55px;
 }
 
 .divisor{
-width: auto; 
+  display: flex;
+  max-width: auto;
   height: 9px;
   background-image: linear-gradient(70deg,#FF6319, #f72d8A,#bc2df9);
   box-shadow: #7c1c0b;
@@ -43,7 +89,17 @@ width: auto;
 
 }
 .divisor2{
-  width: auto; 
+  display: flex;
+  max-width: auto;
+  height: 9px;
+  background-image: linear-gradient(90deg,#FF6319, #f72d8A,#bc2df9);
+  margin: 7px 20px 30px 20px;
+  border-radius: 3px;
+  box-shadow: #7c1c0b;
+}
+.divisor_vertical{
+  display: flex;
+  max-width: auto; 
   height: 9px;
   background-image: linear-gradient(90deg,#FF6319, #f72d8A,#bc2df9);
   margin: 7px 20px 30px 20px;
@@ -65,7 +121,7 @@ width: auto;
     padding-left: 10px;
     background-image:linear-gradient(70deg,#5e5585,#8f84bb) ;
     text-shadow: #fff;
-    }
+  }
 .h2data{
     text-align: left;
     font-style: italic;
@@ -81,7 +137,7 @@ width: auto;
     border-radius: 12px;
     margin-left: 58px;
     padding: 10px;
-
+    
   }
 .databox2{
     background-image:linear-gradient(70deg,#aca1da,#8f84bb);
@@ -99,14 +155,13 @@ width: auto;
     padding: 14px 20px;
     margin: 8px ;
     border: none;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
-    
+   
+      
 
   }
-.btn{
-  box-align: center;
-}
+ 
 input[type=text]{
       width:300px;
       padding: 12px 20px;
@@ -133,12 +188,15 @@ input[type=button] {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 7px;
   cursor: pointer;
   text-align: center;
 }
+input[type=button]:hover {
+  background-color: #45a049;
+}
 #msj{
-  width: 60%;
+  width: auto;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
