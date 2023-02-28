@@ -13,7 +13,7 @@ body {
   box-shadow: 2px 2px 7px 1px #2B273C;
   display: flex;
   justify-content: center;
-  flex-basis:0;
+  
 
 }
 
@@ -23,49 +23,46 @@ body {
   flex-direction: column;
   flex-basis: 0px;
   gap: 2rem;
-  flex-wrap: wrap;
+  
 }
 
 .flexsecciones{
   display: flex;
   flex-direction: column;
-  max-width: fit-content;
+  min-width: 800px;
   flex-basis: 0px;
 
 }
 .flexsecciones1{
   display: flex;
   flex-direction: column;
-  max-width: fit-content;
+  min-width: 800px;
 }
 
 @media  (min-width: 1000px) {
   .flex{
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row;    
     flex: 1 1 auto;
+    gap:2rem;
+    justify-content: center;
    
   }
  
- .flexsecciones{
-    flex-direction: column;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
-  }
  
 }
+/**
 @media (min-width:1000px){
   .flexsecciones{
-    flex-direction: row;
+    min-width: 800px;
   }
   .flexsecciones1{
     flex-direction: row;
   }
   
-}
+}*/
 @media (max-width: 1000px) {
   .divisor2{display: none;}
-  .divisor_vertical{display:none}
+  .divisor_vertical{display:block}
   
 }
   
@@ -99,9 +96,9 @@ margin: 55px;
 }
 .divisor_vertical{
   display: flex;
-  max-width: auto; 
-  height: 9px;
-  background-image: linear-gradient(90deg,#FF6319, #f72d8A,#bc2df9);
+  max-height: auto; 
+  width: 9px;
+  background-image: linear-gradient(180deg,#FF6319, #f72d8A,#bc2df9);
   margin: 7px 20px 30px 20px;
   border-radius: 3px;
   box-shadow: #7c1c0b;
@@ -112,9 +109,9 @@ margin: 55px;
   padding: 2px 5px 2px ;
   background-image:linear-gradient(70deg,#5e5585,#8f84bb) ;
   font-size: larger;
-  border-radius: 15px;
-  
+  border-radius: 15px;  
   }
+
 .h2{
     text-align: left;
     margin-left: 10px;
@@ -122,6 +119,7 @@ margin: 55px;
     background-image:linear-gradient(70deg,#5e5585,#8f84bb) ;
     text-shadow: #fff;
   }
+
 .h2data{
     text-align: left;
     font-style: italic;
@@ -132,6 +130,7 @@ margin: 55px;
     padding: 3px 1px 1px 3px;
 
   }
+
 .databox{
     background-image:linear-gradient(70deg,#aca1da,#8f84bb);
     border-radius: 12px;
@@ -139,6 +138,7 @@ margin: 55px;
     padding: 10px;
     
   }
+
 .databox2{
     background-image:linear-gradient(70deg,#aca1da,#8f84bb);
     border-radius: 12px;
@@ -149,7 +149,9 @@ margin: 55px;
    
 
   }
-#contacto{width: 200px;
+
+#contacto{
+    width: 200px;
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
@@ -157,21 +159,9 @@ margin: 55px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
-   
-      
-
   }
  
 input[type=text]{
-      width:300px;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-  }
-input[type=email]{
     width:300px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -179,6 +169,16 @@ input[type=email]{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+
+input[type=email]{
+  width:300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 input[type=button] {
@@ -192,9 +192,11 @@ input[type=button] {
   cursor: pointer;
   text-align: center;
 }
+
 input[type=button]:hover {
   background-color: #45a049;
 }
+
 #msj{
   width: auto;
   padding: 12px 20px;
@@ -206,4 +208,11 @@ input[type=button]:hover {
 
 #formulario{
   visibility: hidden;
+}
+
+.footer{
+  display: flex;
+  flex-basis: 0px;
+  align-content:center;
+  flex-direction:column;
 }
