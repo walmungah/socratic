@@ -11,7 +11,7 @@ body {
   font-size: x-large;
   padding: 2px;
   box-shadow: 2px 2px 7px 1px #2B273C;
-  display: flex;
+  width: 100%;
   justify-content: center;
   
 
@@ -48,20 +48,10 @@ body {
    
   }
  
- 
 }
-/**
-@media (min-width:1000px){
-  .flexsecciones{
-    min-width: 800px;
-  }
-  .flexsecciones1{
-    flex-direction: row;
-  }
-  
-}*/
+
 @media (max-width: 1000px) {
-  .divisor2{display: none;}
+  .divisorh{display: none;}
   .divisor_vertical{display:block}
   
 }
@@ -72,6 +62,7 @@ display:flex;
 max-height: 180px;
 max-width: auto;
 margin: 55px;
+
 }
 
 .divisor{
@@ -94,12 +85,21 @@ margin: 55px;
   border-radius: 3px;
   box-shadow: #7c1c0b;
 }
+.divisorh{
+  max-width: auto;
+  height: 9px;
+  background-image: linear-gradient(90deg,#FF6319, #f72d8A,#bc2df9);
+  margin: 7px 20px 30px 20px;
+  border-radius: 3px;
+  box-shadow: #7c1c0b;
+}
 .divisor_vertical{
   display: flex;
   max-height: auto; 
   width: 9px;
   background-image: linear-gradient(180deg,#FF6319, #f72d8A,#bc2df9);
-  margin: 7px 20px 30px 20px;
+  margin-left: 7px;
+  margin-right: 7px;
   border-radius: 3px;
   box-shadow: #7c1c0b;
 }
@@ -193,10 +193,6 @@ input[type=button] {
   text-align: center;
 }
 
-input[type=button]:hover {
-  background-color: #45a049;
-}
-
 #msj{
   width: auto;
   padding: 12px 20px;
@@ -208,11 +204,4 @@ input[type=button]:hover {
 
 #formulario{
   visibility: hidden;
-}
-
-.footer{
-  display: flex;
-  flex-basis: 0px;
-  align-content:center;
-  flex-direction:column;
 }
